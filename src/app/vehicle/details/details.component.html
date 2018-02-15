@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <h2>Automobilis : JNJ 727</h2>
+  <table class="table table-bordered">
+    <tr>
+      <th scope="col">Objektas</th>
+      <th scope="col">Informacija</th>
+    </tr>
+    <tr *ngFor="let item of items" >
+      <td>{{ item.name }}</td>
+      <td>{{ item.value }}</td>
+    </tr>
+  </table>
+  <button class="btn btn-primary" (click)="onGet()">Get Details</button>
+  <button class="btn btn-primary" (click)="onSave()">Save Details</button>
+</div>
